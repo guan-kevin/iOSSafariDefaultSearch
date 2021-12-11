@@ -14,14 +14,9 @@
         "512": "images/icon-512.png"
     },
 
-    "background": {
-        "scripts": [ "background.js" ],
-        "persistent": false
-    },
-
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": [ "*://www.ecosia.org/*" ]
     }],
 
     "browser_action": {
@@ -33,6 +28,4 @@
             "38": "images/toolbar-icon-38.png"
         }
     },
-
-    "permissions": [ ]
 }
