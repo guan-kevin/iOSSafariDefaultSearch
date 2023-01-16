@@ -16,9 +16,9 @@
 
     "content_scripts": [{
         "js": [ "content.js" ],
-        "matches": [ "*://www.ecosia.org/*" ]
-    }],
-
+        "matches": [ "*://www.ecosia.org/*" ],
+        "run_at": "document_start"
+    }], 
     "browser_action": {
         "default_popup": "popup.html",
         "default_icon": {
